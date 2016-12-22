@@ -1,0 +1,504 @@
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 1px;
+    background-color: #00182b;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#loader-container{
+
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800,200);
+
+
+#loader-container {
+  z-index: 999999999;
+  width: 200px;
+  height: 200px;
+  color: white;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #3498db;
+  border-radius: 50%;
+  -webkit-animation: borderScale 1s infinite ease-in-out;
+  animation: borderScale 1s infinite ease-in-out;
+}
+
+.loaderWall{
+    background: #000;
+    z-index: 9999999999;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#loadingText {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes borderScale {
+  0% {
+    border: 5px solid white;
+  }
+  50% {
+    border: 25px solid #3498db;
+  }
+  100% {
+    border: 5px solid white;
+  }
+}
+
+@keyframes borderScale {
+  0% {
+    border: 5px solid white;
+  }
+  50% {
+    border: 25px solid #3498db;
+  }
+  100% {
+    border: 5px solid white;
+  }
+}
+
+.wall{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.center-container{
+    position: absolute;
+    height: 100%;
+    width: 695px;
+    left: 50%;
+    margin-left: -347px;
+}
+
+ul.menu li{
+    width: 167px;
+    height: 40px;
+    background: #4baff5;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    margin-top:15px;
+    padding-top: 12px;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0px 1px 20px black;
+    border-radius: 2px;
+    transition: all .3s ease; 
+}
+
+ul.menu{
+    position: absolute;
+    top: 50%;
+    margin-top: -240px;
+    margin-left: -30px;
+}
+
+ul.menu li:hover{
+    background: #021533;
+}
+
+.viewContainer{
+    position: absolute;
+    width: 478px;
+    height: 454px;
+    top:50%;
+    margin-top: -225px;
+    left: 50%;
+    margin-left: -140px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0px 1px 20px black;
+    z-index: 99999;
+    
+}
+
+
+.viewContainer2,.viewContainer3,.viewContainer4,.viewContainer5{
+    opacity: 0;
+    overflow: auto;
+    display: none;
+    margin-top: -225px;  
+}
+
+.viewContainer2{
+    z-index: 2;
+    
+}
+
+.viewContainer3{
+    z-index: 3;
+}
+
+.viewContainer4{
+    z-index: 4;
+}
+
+.viewContainer5{
+    z-index: 5;
+    margin-bottom: 45px;
+}
+
+
+
+div[class*='viewContainer']{
+    position: absolute;
+    width: 478px;
+    height: 454px;
+    top:50%;
+    left: 50%;
+    margin-left: -140px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0px 1px 20px black; 
+    background-color: #ffffff;
+background-image: url("http://www.transparenttextures.com/patterns/church.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+
+.circle{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -105px;
+    border:5px solid #dcdcdc;
+    border-radius: 50%;
+    margin-top: 25px;
+    box-shadow: 0px 1px 5px black;
+    background: url('/wp-content/themes/evport/images/DSC_0802.png') no-repeat 0px 8px;
+    background-size: cover;
+}
+
+.text{
+    position: absolute;
+    top:50%;
+    margin-top: 5px;
+    left: 50%;
+    margin-left: -135px;
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+}
+
+.botText{
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5%;
+    margin-bottom: -5px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-bottom: 2px solid #021533;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    width: 92%;
+}
+
+i.fa-code{
+    color: #333;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+i.fa-adjust{
+    color: #333;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.podcode{
+    position: absolute;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+.line{
+    border-bottom: 1px dashed #021533;
+    width: 92%;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.htmlSkill{
+    width: 92%;
+    margin-left: 20px;
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background: white;
+}
+
+.cssSkill{
+    width: 92%;
+    margin-left: 20px;
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background: white;
+}
+
+.jsSkill{
+    width: 92%;
+    margin-left: 20px;
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background: white;
+}
+
+div[class*="filter"]{
+    height: 100%;
+}
+
+.filter2{
+    width: 60%;
+    background: #021533;
+}
+
+.filter3{
+    width: 40%;
+    background: #ba2525;
+}
+
+.filter{
+    width: 80%;
+    background: #4baff5;
+}
+
+.pr{
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    width: 50%;
+}
+
+.persent{
+    position: absolute;
+    font-weight: bold;
+    color:#909090;
+    margin-top: -22px;
+    margin-left: 375px;
+    letter-spacing: 1px;
+}
+
+.SKtext{
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.move{
+    margin-top: 0px;
+    
+}
+
+.workBlock{
+    width: 92%;
+    height: 270px;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.workBlock img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.imgBlock img{
+    width:100%;
+    height: 100%;
+
+}
+
+.limiter{
+    margin-top: 10px;
+    height: 20px;
+}
+
+.workBlock img{
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px black;
+    cursor:pointer;
+    width: 100%;
+    height: 100%;
+}
+
+
+.workBlock:hover .blackBlock{
+    opacity: 1;
+    
+}
+
+.blackBlock{
+    height: 90%;
+    position: absolute;
+    width: 90%;
+    top:50%;
+    left: 50%;
+    margin-left: -185px;
+    margin-top: -121px;
+    background: rgba(0,0,0,.8);
+    border-radius:3px;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.titleProject{
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 24px;
+    line-height: 250px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    
+}
+
+.blogContainer{
+    width: 92%;
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 445px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.imgBlock{
+    width:90%;
+    height: 50%;
+    margin-left: 20px;
+    float: left;
+    margin-top: 17px;
+}
+
+.blogTitle{
+    font-weight: bold;
+    color:#021533;
+    margin-left: 20px;
+    font-size: 18px;
+    float: left;
+    margin-top: 15px;
+    border-bottom: 1px dashed #021533;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.blogText{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.contactBlock{
+    width: 86%;
+    height: 76%;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.contactBlock ul{
+    margin-left: -30px;
+    margin-top: -5px;
+}
+
+.contactBlock ul li{
+    list-style: none;
+    margin-top: 5px;
+    
+}
+
+.contactBlock>ul>li>.fa{
+    padding-right: 10px;
+}
+
+.contactBlock>ul>li>.fa.fa-envelope{
+    padding-right: 7px;
+}
+
+.frm{
+    margin-top: 15px;
+    float: left;
+}
+
+.nm{
+    width:90%;
+    border-radius: 3px;
+    border:none;
+    border:1px solid #ccc;
+    padding:5px;
+    margin-left: 20px;
+}
+
+.em{
+    width:90%;
+    border-radius: 3px;
+    border:none;
+    border:1px solid #ccc;
+    padding:5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+textarea{
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+    width: 370px;
+    min-width: 370px;
+    max-width: 370px;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 5px;
+    border: none;
+    border:1px solid #ccc;
+}
+
+.but{
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
